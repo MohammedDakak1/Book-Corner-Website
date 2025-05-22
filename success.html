@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- Document type -->
+<html lang="en"> <!-- Language -->
+
+<head>
+    <title>Book Corner</title>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="description" content="My book shop, Book Corner"> <!-- Description of the page -->
+    <meta name="keywords" content="book, library, bookshop"> <!-- Keywords for search engines -->
+    <meta name="author" content="Mohammed Dakak"> <!-- Author -->
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- CSS linked -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font awesome for smartphone navigation-->
+</head>
+
+<body> <!-- All user visible elements in the page -->
+    <a href="index.html"> <!-- Link to the home page -->
+        <img class="logo" src="Images/Logo.png" alt="Book Corner Logo"> <!-- Logo -->
+    </a>
+
+    <header> <!-- Header section -->
+        <nav class="topnav"> <!-- Navigation bar -->
+            <ul> <!-- Unordered list for navigation links -->
+                <li><a href="index.html" aria-label="Home Page">Home</a></li>
+                <li><a href="#About" aria-label="About Us Page">About Us</a></li>
+                <li><a href="#Contact" aria-label="Contact Us Page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bm-mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="bm-topnav">
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="#About">About Us</a>
+                <a href="#Contact">Contact Us</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <!-- JavaScript function to toggle the menu -->
+                <i class="fa fa-bars"></i> <!-- Hamburger icon -->
+            </a>
+        </div>
+    </div>
+
+    <div class="success-container"> <!-- Success section -->
+        <h1>Thank you for your purchase!</h1>
+        <div class="card-section">
+            <img src="Images/mastercard.png" alt="Success icon" class="success-icon"> <!-- Success icon -->
+            <p class="card-details">Your credit card number ends in <span id="cardDigits">**** **** **** XXXX</span>
+            </p>
+            <!-- Masked card number -->
+        </div>
+    </div>
+
+    <footer> <!-- Footer section -->
+        <div class="footer"> <!-- Footer container -->
+            <div class="f-row"> <!-- First row of the footer -->
+                <ul>
+                    <li><a href="index.html" aria-label="Home Page">Home</a></li>
+                    <li><a href="#" aria-label="About Us Page">About Us</a></li>
+                    <li><a href="#" aria-label="Contact Us Page">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="f-row"> <!-- Second row of the footer -->
+                Book Corner © 2025 - All rights reserved || Designed By: Mohammed Dakak (Web
+                Development Assignment - Manchester Metropolitan University)
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/success.js"></script> <!-- JavaScript linked -->
+    <script src="JS/burger.js"></script> <!-- JavaScript linked -->
+</body>
+
+</html>

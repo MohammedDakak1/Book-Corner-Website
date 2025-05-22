@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Document type -->
+<html lang="en"> <!-- Language -->
+
+<head>
+    <title>Book Corner</title>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="description" content="My book shop, Book Corner"> <!-- Description of the page -->
+    <meta name="keywords" content="book, library, bookshop"> <!-- Keywords for search engines -->
+    <meta name="author" content="Mohammed Dakak"> <!-- Author -->
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- CSS linked -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font awesome for smartphone navigation and payment icons-->
+</head>
+
+<body> <!-- All user visible elements in the page -->
+    <a href="index.html"> <!-- Link to the home page -->
+        <img class="logo" src="Images/Logo.png" alt="Book Corner Logo"> <!-- Logo -->
+    </a>
+
+    <header> <!-- Header section -->
+        <nav class="topnav"> <!-- Navigation bar -->
+            <ul> <!-- Unordered list for navigation links -->
+                <li><a href="index.html" aria-label="Home Page">Home</a></li>
+                <li><a href="#About" aria-label="About Us Page">About Us</a></li>
+                <li><a href="#Contact" aria-label="Contact Us Page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bm-mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="bm-topnav">
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="#About">About Us</a>
+                <a href="#Contact">Contact Us</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <!-- JavaScript function to toggle the menu -->
+                <i class="fa fa-bars"></i> <!-- Hamburger menu icon -->
+            </a>
+        </div>
+    </div>
+
+    <div class="row"> <!-- Payment Section -->
+        <div class="col-75"> <!-- Main column -->
+            <div class="container2"> <!-- Main container for the payment form -->
+                <h3>Payment Options</h3>
+                <label>Debit / Credit Card</label>
+                <div class="icon-container2">
+                    <!-- Icon container for payment methods and to help users visually identify the accepted payment methods in my page -->
+                    <i class="fa fa-cc-visa" style="color:navy;" aria-hidden="true"></i> <!-- Visa icon -->
+                    <i class="fa fa-cc-amex" style="color:blue;" aria-hidden="true"></i> <!-- American Express icon -->
+                    <i class="fa fa-cc-mastercard" style="color:red;" aria-hidden="true"></i> <!-- MasterCard icon -->
+                    <i class="fa fa-cc-discover" style="color:orange;" aria-hidden="true"></i> <!-- Discover icon -->
+                </div>
+
+                <label for="ccnum">Card Number</label> <!-- Card number label -->
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"
+                    pattern="\d{4}-\d{4}-\d{4}-\d{4}" required aria-label="Card Number">
+                <!-- Card number input with attributes to ensure the correct format and length of it -->
+                <span id="ccnum-error" class="error-message"></span> <!-- Error message container for card number -->
+
+                <label for="expmonth">Expiration Date</label> <!-- Expiration date label -->
+                <select id="expmonth" name="expmonth" required aria-label="Expiration Month">
+                    <option value="" disabled selected>Month</option> <!-- Dynamically populates via JavaScript -->
+                </select>
+
+                <select id="expyear" name="expyear" required aria-label="Expiration Year">
+                    <option value="" disabled selected>Year</option> <!-- Dynamically populates via JavaScript -->
+                </select>
+
+                <div class="row"> <!-- Row for CVV and security code -->
+                    <div class="col-50">
+                        <label for="cvv">Security Code</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="547" pattern="\d{3,4}" required
+                            aria-label="Security Code">
+                        <!-- CVV input with attributes to ensure a 3-4 digit input -->
+                        <span id="cvv-error" class="error-message"></span> <!-- Error message container for CVV -->
+                        <p class="security-code">(3-4 digit code normally on the back of your card)</p>
+                        <!-- Security code hint -->
+                    </div>
+                </div>
+                <input type="submit" value="Continue" class="btn"> <!-- Submit button -->
+            </div>
+        </div>
+    </div>
+
+    <footer> <!-- Footer section -->
+        <div class="footer"> <!-- Footer container -->
+            <div class="f-row"> <!-- First row of the footer -->
+                <ul>
+                    <li><a href="index.html" aria-label="Home Page">Home</a></li>
+                    <li><a href="#" aria-label="About Us Page">About Us</a></li>
+                    <li><a href="#" aria-label="Contact Us Page">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="f-row"> <!-- Second row of the footer -->
+                Book Corner © 2025 - All rights reserved || Designed By: Mohammed Dakak (Web
+                Development Assignment - Manchester Metropolitan University)
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script> <!-- JavaScript linked-->
+    <script src="JS/burger.js"></script> <!-- JavaScript linked -->
+</body>
+
+</html>

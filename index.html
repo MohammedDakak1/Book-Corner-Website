@@ -1,0 +1,149 @@
+<!DOCTYPE html> <!-- Document type -->
+<html lang="en"> <!-- Language -->
+
+<head>
+    <title>Book Corner</title>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="description" content="My book shop, Book Corner"> <!-- Description of the page -->
+    <meta name="keywords" content="book, library, bookshop"> <!-- Keywords for search engines -->
+    <meta name="author" content="Mohammed Dakak"> <!-- Author -->
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- CSS linked -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font awesome for smartphone navigation-->
+</head>
+
+<body> <!-- All user visible elements in the page -->
+    <a href="index.html"> <!-- Link to the home page -->
+        <img class="logo" src="Images/Logo.png" alt="Book Corner Logo"> <!-- Logo -->
+    </a>
+
+    <header> <!-- Header section -->
+        <nav class="topnav"> <!-- Navigation bar -->
+            <ul> <!-- Unordered list for navigation links -->
+                <li><a class="active" href="index.html" aria-label="Home Page">Home</a></li>
+                <li><a href="#About" aria-label="About Us Page">About Us</a></li>
+                <li><a href="#Contact" aria-label="Contact Us Page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bm-mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="bm-topnav">
+            <div id="myLinks">
+                <a class="active" href="index.html" aria-label="Home Page">Home</a>
+                <a href="#About" aria-label="About Us Page">About Us</a>
+                <a href="#Contact" aria-label="Contact Us Page">Contact Us</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <main class="container"> <!-- Main container for the content -->
+        <div class="row"> <!-- First row for the columns -->
+            <div class="column book-image"> <!-- First column -->
+                <img src="Images/Twilight_B1.jpg" alt="Book 1" class="book"> <!-- Twilight book image -->
+            </div>
+            <div class="column book-text"> <!-- Second column -->
+                <h2>Twilight</h2>
+                <p>Bella Swan moves to Forks, expecting a dull life.
+                    She’s drawn to Edward Cullen, who keeps his distance.
+                    After he saves her life, she discovers he and his family are vampires, and his coldness is to
+                    protect her.
+                </p>
+                <a href="pay.html" class="pay-button">Pay</a> <!-- Pay button linked to the pay page -->
+            </div>
+            <div class="column book-image"> <!-- Third column -->
+                <img src="Images/TheParisLibrary_B2.jpg" alt="Book 2" class="book">
+                <!-- The Paris Library book image -->
+            </div>
+            <div class="column book-text"> <!-- Fourth column -->
+                <h2>The Paris Library</h2>
+                <p>A heartwarming and compelling novel celebrating the power of books and libraries,
+                    perfect for bibliophiles and historical fiction fans.
+                </p>
+                <a href="pay.html" class="pay-button">Pay</a> <!-- Pay button linked to the pay page -->
+            </div>
+        </div>
+
+        <div class="row"> <!-- Second row for the columns -->
+            <div class="column book-image"> <!-- First column -->
+                <img src="Images/TheSnowdoniaKillings_B3.jpg" alt="Book 3" class="book">
+                <!-- The Snowdonia Killings book image -->
+            </div>
+            <div class="column book-text"> <!-- Second column -->
+                <h2>The Snowdonia Killings</h2>
+                <p>DI Ruth Hunter's dream of a peaceful life in Snowdonia turns into a nightmare when she faces a brutal
+                    murder with cryptic symbols.
+                    As another victim emerges, Ruth races to stop the killer in this dark and gripping thriller.
+                </p>
+                <a href="pay.html" class="pay-button">Pay</a> <!-- Pay button linked to the pay page -->
+            </div>
+            <div class="column book-image"> <!-- Third column -->
+                <img src="Images/ThisIsLondon_B4.jpg" alt="Book 4" class="book"> <!-- This Is London book image -->
+            </div>
+            <div class="column book-text"> <!-- Fourth column -->
+                <h2>This Is London</h2>
+                <p>Can DC Ruth Hunter and DC Lucy Henry uncover the truth behind a British Army cover-up?
+                    An investigation that uncovers dark secrets at Cranleigh Barracks—bullying, racism, and abuse—and
+                    powerful forces determined to protect their own.
+                </p>
+                <a href="pay.html" class="pay-button">Pay</a> <!-- Pay button linked to the pay page -->
+            </div>
+        </div>
+
+
+        <div class="row"> <!-- Third row for the columns -->
+            <div class="column book-image"> <!-- First column -->
+                <img src="Images/OneLostSoul.jpg" alt="Book 3" class="book"> <!-- One Lost Soul book image -->
+            </div>
+            <div class="column book-text"> <!-- Second column -->
+                <h2>One Lost Soul</h2>
+                <p>When a teenager's body is found on a cliff, DI Tom Janssen must uncover the truth. Holly Bettany had
+                    secrets, and someone killed to keep them hidden.
+                    Set in coastal Norfolk, this dark, fast-paced mystery will keep you guessing until the end. "One
+                    Lost Soul" is JM Dalgliesh's debut crime thriller, perfect for fans of LJ Ross and Angela Marsons.
+                </p>
+                <a href="pay.html" class="pay-button">Pay</a> <!-- Pay button linked to the pay page -->
+            </div>
+            <div class="column book-image"> <!-- Third column -->
+                <img src="Images/ShadowOfTheTitanic.jpg" alt="Book 4" class="book">
+                <!-- Shadow of the Titanic book image -->
+            </div>
+            <div class="column book-text"> <!-- Fourth column -->
+                <h2>Shadow of the Titanic</h2>
+                <p>In the early hours of 15 April 1912, the Titanic sank, leaving 1,500 people struggling in the
+                    freezing Atlantic. The screams faded to silence as hypothermia claimed lives.
+                    "Surviving the Titanic" explores the impact on the 705 survivors, shedding light on their lives
+                    post-tragedy. This book, timed for the 100th anniversary, reveals how the disaster shaped the
+                    survivors' futures and memories.
+                </p>
+                <a href="pay.html" class="pay-button">Pay</a> <!-- Pay button linked to the pay page -->
+            </div>
+        </div>
+    </main>
+
+    <footer> <!-- Footer section -->
+        <div class="footer"> <!-- Footer container -->
+            <div class="f-row"> <!-- First row of the footer -->
+                <ul>
+                    <li><a href="index.html" aria-label="Home Page">Home</a></li>
+                    <li><a href="#" aria-label="About Us Page">About Us</a></li>
+                    <li><a href="#" aria-label="Contact Us Page">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="f-row"> <!-- Second row of the footer -->
+                Book Corner © 2025 - All rights reserved || Designed By: Mohammed Dakak (Web
+                Development Assignment - Manchester Metropolitan University)
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/burger.js"></script> <!-- JavaScript linked -->
+</body>
+
+</html>
